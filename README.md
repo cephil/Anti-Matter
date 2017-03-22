@@ -1,9 +1,20 @@
-# react-less-boilerplate
-
-Webpack, React & React Hot Reload, ES6, Less & CSS Prefixer.
-
-- `git clone git@github.com:quietshu/react-less-boilerplate.git`
-- `cd react-less-boilerplate`
-- `npm install`
-- `npm start`
-- Good to go!
+```
+ ______  __  __  ______  ______                     
+/\  _  \/\ \/\ \/\__  _\/\__  _\                    
+\ \ \L\ \ \ `\\ \/_/\ \/\/_/\ \/                    
+ \ \  __ \ \ , ` \ \ \ \   \ \ \                    
+  \ \ \/\ \ \ \`\ \ \ \ \   \_\ \__                 
+   \ \_\ \_\ \_\ \_\ \ \_\  /\_____\                
+    \/_/\/_/\/_/\/_/  \/_/  \/_____/                
+                                                    
+                                                    
+         ______  ______  ______  ____    ____       
+ /'\_/`\/\  _  \/\__  _\/\__  _\/\  _`\ /\  _`\     
+/\      \ \ \L\ \/_/\ \/\/_/\ \/\ \ \L\_\ \ \L\ \   
+\ \ \__\ \ \  __ \ \ \ \   \ \ \ \ \  _\L\ \ ,  /   
+ \ \ \_/\ \ \ \/\ \ \ \ \   \ \ \ \ \ \L\ \ \ \\ \  
+  \ \_\\ \_\ \_\ \_\ \ \_\   \ \_\ \ \____/\ \_\ \_\
+   \/_/ \/_/\/_/\/_/  \/_/    \/_/  \/___/  \/_/\/ /
+                                                    
+```
+# WIP While Sharpening up with React Themeing :)!
