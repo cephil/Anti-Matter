@@ -1,0 +1,156 @@
+@import '../../styles/_palette.less';
+
+.btn-std {
+  height:150px;
+}
+
+.btn-std button {
+  margin: 0 10px;
+
+  &:first-child {
+    margin-left: 55px;
+  }
+}
+button {
+  font-weight: bold;
+  color: @whiteText;
+  background-color: @primaryButton;
+  text-shadow: @insetShadow;
+  cursor: pointer;
+  border: none;
+  border-radius:4px;
+  position:relative;
+  -webkit-appearance: none;
+  transition: all 250ms ease-in;
+  outline: none;
+
+  &.shadow:before {
+    content:'';
+    width:100%;
+    height:100%;
+    box-shadow: 0 1px 2px rgba(0,0,0,.5);
+    position:absolute;
+    left:0;
+    top:2px;
+    border-radius: 4px;
+    z-index: -1;
+  }
+
+  &.small {
+    font-size: 0.6rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  &.normal {
+    font-size: 0.85rem;
+    padding: 0.8rem 1rem;
+  }
+
+  &.medium {
+    font-size: 0.9rem;
+    padding: 1rem 1.2rem;
+  }
+
+  &.large {
+    font-size: 1.4rem;
+    padding: 1.2rem 1.6rem;
+  }
+
+  &.xlarge {
+    font-size: 1.7rem;
+    padding: 1.5rem 1.9rem;
+  }
+
+  &.primary {
+    &.inset {
+      box-shadow: -1px -1px 0 darken(@primaryButton, 10%), 1px 1px 0 lighten(@primaryButton, 10%);
+    }
+    &:hover {
+      background-color: lighten(@primaryButton, 5%);
+      .hoverAnim;
+    }
+  }
+
+  &.secondary {
+    background-color: @secondaryButton;
+
+    &.inset {
+      box-shadow: -1px -1px 0 darken(@secondaryButton, 10%), 1px 1px 0 lighten(@secondaryButton, 10%);
+    }
+    &:hover {
+      background-color: lighten(@secondaryButton, 5%);
+      .hoverAnim;
+    }
+  }
+
+  &.tertiary {
+    background-color: @tertiaryButton;
+
+    &.inset {
+      box-shadow: -1px -1px 0 darken(@tertiaryButton, 10%), 1px 1px 0 lighten(@tertiaryButton, 10%);
+    }
+    &:hover {
+      background-color: lighten(@tertiaryButton, 10%);
+      .hoverAnim;
+    }
+  }
+
+  &.blueGray {
+    background-color: @blueGrayButton;
+
+    &.inset {
+      box-shadow: -1px -1px 0 darken(@blueGrayButton, 10%), 1px 1px 0 lighten(@blueGrayButton, 10%);
+    }
+
+    &:hover {
+      background-color: lighten(@blueGrayButton, 10%);
+      .hoverAnim;
+    }
+  }
+
+  &.red {
+    background-color: @redButton;
+
+    &.inset {
+      box-shadow: -1px -1px 0 darken(@redButton, 10%), 1px 1px 0 lighten(@redButton, 10%);
+    }
+
+    &:hover {
+      background-color: lighten(@redButton, 10%);
+      .hoverAnim;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    right: 0px;
+    height: 10%;
+    position: absolute;
+    bottom: 8%;
+    left: 0px;
+    opacity: 1;
+    transition: all 150ms linear;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 6px;
+    box-shadow: 0 7px 1px rgba(0,0,0,.4)
+  }
+}
+.hoverAnim {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 2px rgba(0,0,0, .3);
+
+  &::after {
+    content: '';
+    display: block;
+    right: 1px;
+    height: 10%;
+    position: absolute;
+    bottom: 7px;
+    left: 1px;
+    opacity: 1;
+    transition: all 50ms linear;
+    border-bottom: 2px solid rgba(255,255,255,.5);
+    border-radius: 6px;
+  }
+}
